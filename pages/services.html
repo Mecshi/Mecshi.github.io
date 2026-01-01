@@ -4,143 +4,190 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Servicios - TechSolutions</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
   <link rel="stylesheet" href="../styles/styles.css">
+
+  <title>Servicios - TechSolutions</title>
 </head>
 
-/** Para la información de los servicios ofrecidos por TechSolutions le solicite a ChatGPT que me compartiera textos
-como por ejemplo -CI/CD pipelines-
-**/
-
 <body>
-  <header>
-    <nav>
-      <a href="../index.html" aria-label="Volver al inicio - TechSolutions" class="logo">TechSolutions</a>
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="services.html">Servicios</a></li>
-        <li><a href="contact.html">Contacto</a></li>
-      </ul>
+  <!-- HEADER CON NAVBAR DE BOOTSTRAP -->
+  <header class="fixed-top">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid px-lg-5">
+        <a class="navbar-brand" href="../index.html">TechSolutions</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="services.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
+
   <main>
+    <!-- HERO SECTION -->
     <section class="hero">
-      <h1>Nuestros Servicios</h1>
-      <p>Soluciones tecnológicas completas para tu empresa</p>
+      <div class="container text-center">
+        <h1>Nuestros Servicios</h1>
+        <p>Soluciones tecnológicas completas para tu empresa</p>
+      </div>
     </section>
-    <div class="container">
-      <div class="services-grid">
-        <div class="service-card">
-          <h3>Desarrollo Web</h3>
-          <p>Creamos sitios web modernos y responsivos utilizando las últimas tecnologías. Nuestros desarrollos son
-            escalables, seguros y optimizados para SEO.</p>
-          <ul class="services-ul">
-            <li>Sitios corporativos</li>
-            <li>E-commerce</li>
-            <li>Aplicaciones web progresivas</li>
-            <li>Paneles de administración</li>
-          </ul>
+
+    <!-- SERVICIOS DETALLADOS -->
+    <div class="container py-5">
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="service-card">
+            <h3>Desarrollo Web</h3>
+            <p>Creamos sitios web modernos y responsivos utilizando las últimas tecnologías. Nuestros desarrollos son
+              escalables, seguros y optimizados para SEO.</p>
+            <ul class="services-ul">
+              <li>Sitios corporativos</li>
+              <li>E-commerce</li>
+              <li>Aplicaciones web progresivas</li>
+              <li>Paneles de administración</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="service-card">
-          <h3>Aplicaciones Móviles</h3>
-          <p>Desarrollamos aplicaciones móviles nativas e híbridas para iOS y Android. Experiencias intuitivas que tus
-            usuarios amarán.</p>
-          <ul class="services-ul">
-            <li>Apps nativas iOS/Android</li>
-            <li>Apps híbridas multiplataforma</li>
-            <li>Integración con APIs</li>
-            <li>Publicación en stores</li>
-          </ul>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="service-card">
+            <h3>Aplicaciones Móviles</h3>
+            <p>Desarrollamos aplicaciones móviles nativas e híbridas para iOS y Android. Experiencias intuitivas que tus
+              usuarios amarán.</p>
+            <ul class="services-ul">
+              <li>Apps nativas iOS/Android</li>
+              <li>Apps híbridas multiplataforma</li>
+              <li>Integración con APIs</li>
+              <li>Publicación en stores</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="service-card">
-          <h3>Software a Medida</h3>
-          <p>Diseñamos y desarrollamos software personalizado que se adapta perfectamente a los procesos de tu
-            empresa.
-          </p>
-          <ul class="services-ul">
-            <li>Sistemas de gestión ERP</li>
-            <li>CRM personalizados</li>
-            <li>Automatización de procesos</li>
-            <li>Integraciones empresariales</li>
-          </ul>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="service-card">
+            <h3>Software a Medida</h3>
+            <p>Diseñamos y desarrollamos software personalizado que se adapta perfectamente a los procesos de tu
+              empresa.</p>
+            <ul class="services-ul">
+              <li>Sistemas de gestión ERP</li>
+              <li>CRM personalizados</li>
+              <li>Automatización de procesos</li>
+              <li>Integraciones empresariales</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="service-card">
-          <h3>Consultoría IT</h3>
-          <p>Te asesoramos en la transformación digital de tu empresa con las mejores prácticas y tecnologías del
-            mercado.</p>
-          <ul class="services-ul">
-            <li>Auditoría tecnológica</li>
-            <li>Arquitectura de software</li>
-            <li>Estrategia digital</li>
-            <li>Optimización de procesos</li>
-          </ul>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="service-card">
+            <h3>Consultoría IT</h3>
+            <p>Te asesoramos en la transformación digital de tu empresa con las mejores prácticas y tecnologías del
+              mercado.</p>
+            <ul class="services-ul">
+              <li>Auditoría tecnológica</li>
+              <li>Arquitectura de software</li>
+              <li>Estrategia digital</li>
+              <li>Optimización de procesos</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="service-card">
-          <h3>Cloud & DevOps</h3>
-          <p>Migramos y optimizamos tu infraestructura en la nube con servicios de DevOps para mayor eficiencia.</p>
-          <ul class="services-ul">
-            <li>Migración a la nube</li>
-            <li>CI/CD pipelines</li>
-            <li>Monitoreo y logging</li>
-            <li>Containerización</li>
-          </ul>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="service-card">
+            <h3>Cloud & DevOps</h3>
+            <p>Migramos y optimizamos tu infraestructura en la nube con servicios de DevOps para mayor eficiencia.</p>
+            <ul class="services-ul">
+              <li>Migración a la nube</li>
+              <li>CI/CD pipelines</li>
+              <li>Monitoreo y logging</li>
+              <li>Containerización</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="service-card">
-          <h3>Mantenimiento & Soporte</h3>
-          <p>Brindamos soporte continuo y mantenimiento para garantizar el correcto funcionamiento de tus sistemas.
-          </p>
-          <ul class="services-ul">
-            <li>Soporte 24/7</li>
-            <li>Actualizaciones de seguridad</li>
-            <li>Optimización de rendimiento</li>
-            <li>Resolución de incidencias</li>
-          </ul>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="service-card">
+            <h3>Mantenimiento & Soporte</h3>
+            <p>Brindamos soporte continuo y mantenimiento para garantizar el correcto funcionamiento de tus sistemas.
+            </p>
+            <ul class="services-ul">
+              <li>Soporte 24/7</li>
+              <li>Actualizaciones de seguridad</li>
+              <li>Optimización de rendimiento</li>
+              <li>Resolución de incidencias</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </main>
 
+  <!-- FOOTER -->
   <footer role="contentinfo">
-    <div class="footer-content">
-      <div class="footer-column">
-        <h3>TechSolutions</h3>
-        <p>Transformamos ideas en soluciones tecnológicas innovadoras para impulsar tu negocio hacia el futuro.</p>
-        <div class="social-links">
-          <a href="#" aria-label="Facebook">Facebook</a>
-          <a href="#" aria-label="Twitter">Twitter</a>
-          <a href="#" aria-label="LinkedIn">LinkedIn</a>
-          <a href="#" aria-label="Instagram">Instagram</a>
+    <div class="container">
+      <div class="row g-4 pb-4">
+        <div class="col-12 col-md-4">
+          <div class="footer-column">
+            <h3>TechSolutions</h3>
+            <p>Transformamos ideas en soluciones tecnológicas innovadoras para impulsar tu negocio hacia el futuro.</p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook">Facebook</a>
+              <a href="#" aria-label="Twitter">Twitter</a>
+              <a href="#" aria-label="LinkedIn">LinkedIn</a>
+              <a href="#" aria-label="Instagram">Instagram</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="footer-column">
-        <h3>Empresa</h3>
-        <ul>
-          <li><a href="../index.html">Sobre Nosotros</a></li>
-          <li><a href="services.html">Nuestro Equipo</a></li>
-          <li><a href="jobs.html">Trabaja con Nosotros</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <h3>Contacto</h3>
-        <ul class="contact-info">
-          <li>📍 Av. Principal 123, Villa María, Córdoba</li>
-          <li>📞 +54 353 123-4567</li>
-          <li>✉️ info@techsolutions.com</li>
-          <li>🕒 Lun - Vie: 9:00 - 18:00</li>
-        </ul>
+        <div class="col-12 col-md-4">
+          <div class="footer-column">
+            <h3>Empresa</h3>
+            <ul>
+              <li><a href="../index.html">Sobre Nosotros</a></li>
+              <li><a href="services.html">Nuestro Equipo</a></li>
+              <li><a href="jobs.html">Trabaja con Nosotros</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="footer-column">
+            <h3>Contacto</h3>
+            <ul class="contact-info">
+              <li>📍 Av. Principal 123, Villa María, Córdoba</li>
+              <li>📞 +54 353 123-4567</li>
+              <li>✉️ info@techsolutions.com</li>
+              <li>🕐 Lun - Vie: 9:00 - 18:00</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; 2024 TechSolutions. Todos los derechos reservados.</p>
+      <div class="container">
+        <p>&copy; 2024 TechSolutions. Todos los derechos reservados.</p>
+      </div>
     </div>
   </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
