@@ -1,9 +1,12 @@
 // ============================================
-// NAVBAR - Versión Simplificada
+// NAVBAR
 // ============================================
 
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
 .navbar {
-  padding: $spacing-sm 0;
+  padding: v.$spacing-sm 0;
 
   &-brand {
     font-size: 1.5rem;
@@ -19,8 +22,8 @@
   &-nav {
     .nav-link {
       color: white !important;
-      @include transition(opacity);
-      padding: $spacing-xs $spacing-sm;
+      @include m.transition(opacity);
+      padding: v.$spacing-xs v.$spacing-sm;
       position: relative;
 
       // Línea de subrayado animada

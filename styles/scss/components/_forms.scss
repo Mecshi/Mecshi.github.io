@@ -1,39 +1,41 @@
 // ============================================
-// FORMULARIOS - Versión Simplificada
+// FORMULARIOS
 // ============================================
+
+@use '../abstracts/variables' as v;
 
 .contact-form {
   background: white;
-  padding: $spacing-lg;
-  border-radius: $border-radius-md;
-  box-shadow: $shadow-md;
+  padding: v.$spacing-lg;
+  border-radius: v.$border-radius-md;
+  box-shadow: v.$shadow-md;
   max-width: 600px;
   margin: 0 auto;
 
   h2 {
     text-align: center;
-    color: $primary-color;
-    margin-bottom: $spacing-lg;
+    color: v.$primary-color;
+    margin-bottom: v.$spacing-lg;
     font-weight: bold;
   }
 }
 
 .form-label {
   font-weight: bold;
-  color: $text-dark;
-  margin-bottom: $spacing-xs;
+  color: v.$text-dark;
+  margin-bottom: v.$spacing-xs;
 }
 
 .form-control,
 .form-select {
   padding: 0.8rem;
-  border: 1px solid $border-color;
-  border-radius: $border-radius-sm;
-  font-size: $font-size-base;
+  border: 1px solid v.$border-color;
+  border-radius: v.$border-radius-sm;
+  font-size: v.$font-size-base;
   transition: all 0.3s ease;
 
   &:focus {
-    border-color: $primary-color;
+    border-color: v.$primary-color;
     box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
     transform: translateY(-2px);
   }

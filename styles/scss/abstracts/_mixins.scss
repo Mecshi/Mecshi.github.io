@@ -3,20 +3,34 @@
 // ============================================
 
 @mixin respond-to($breakpoint) {
-  @if $breakpoint == xs {
-    @media (max-width: $breakpoint-xs) { @content; }
+  @if $breakpoint ==xs {
+    @media (max-width: 480px) {
+      @content;
+    }
   }
-  @else if $breakpoint == sm {
-    @media (max-width: $breakpoint-sm) { @content; }
+
+  @else if $breakpoint ==sm {
+    @media (max-width: 576px) {
+      @content;
+    }
   }
-  @else if $breakpoint == md {
-    @media (max-width: $breakpoint-md) { @content; }
+
+  @else if $breakpoint ==md {
+    @media (max-width: 768px) {
+      @content;
+    }
   }
-  @else if $breakpoint == lg {
-    @media (max-width: $breakpoint-lg) { @content; }
+
+  @else if $breakpoint ==lg {
+    @media (max-width: 992px) {
+      @content;
+    }
   }
-  @else if $breakpoint == xl {
-    @media (max-width: $breakpoint-xl) { @content; }
+
+  @else if $breakpoint ==xl {
+    @media (max-width: 1200px) {
+      @content;
+    }
   }
 }
 
@@ -26,7 +40,7 @@
 // ============================================
 
 @mixin gradient-primary {
-  background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 
@@ -52,7 +66,7 @@
 // ============================================
 
 @mixin transition($properties...) {
-  transition: $properties $transition-base;
+  transition: $properties 0.3s ease;
 }
 
 
@@ -61,11 +75,11 @@
 // ============================================
 
 @mixin hover-lift($distance: -10px) {
-  transition: transform $transition-base, box-shadow $transition-base;
-  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
   &:hover {
     transform: translateY($distance);
-    box-shadow: $shadow-lg;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   }
 }
 
@@ -76,9 +90,9 @@
 
 @mixin card-base {
   background: white;
-  padding: $spacing-lg;
-  border-radius: $border-radius-md;
-  box-shadow: $shadow-md;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   height: 100%;
   border: none;
 }

@@ -1,12 +1,14 @@
 // ============================================
-// BOTONES - Versión Simplificada
+// BOTONES
 // ============================================
+
+@use '../abstracts/variables' as v;
 
 .btn-custom {
   background: white;
-  color: $primary-color;
-  padding: $spacing-sm $spacing-lg;
-  border-radius: $border-radius-sm;
+  color: v.$primary-color;
+  padding: v.$spacing-sm v.$spacing-lg;
+  border-radius: v.$border-radius-sm;
   font-weight: bold;
   border: none;
   text-decoration: none;
@@ -16,8 +18,8 @@
   &:hover {
     transform: translateY(-3px);
     background: white;
-    color: $primary-color;
-    box-shadow: 0 10px 25px rgba($primary-color, 0.3);
+    color: v.$primary-color;
+    box-shadow: 0 10px 25px rgba(v.$primary-color, 0.3);
   }
 
   &:active {
@@ -25,26 +27,26 @@
   }
 
   &.btn-lg {
-    font-size: $font-size-lg;
+    font-size: v.$font-size-lg;
     padding: 1.2rem 2.5rem;
   }
 }
 
 .btn-submit {
-  background: $primary-color;
+  background: v.$primary-color;
   color: white;
-  padding: $spacing-sm $spacing-lg;
+  padding: v.$spacing-sm v.$spacing-lg;
   border: none;
-  border-radius: $border-radius-sm;
+  border-radius: v.$border-radius-sm;
   font-weight: bold;
   width: 100%;
   cursor: pointer;
   transition: all 0.3s ease;
 
   &:hover {
-    background: $secondary-color;
+    background: v.$secondary-color;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba($secondary-color, 0.4);
+    box-shadow: 0 8px 20px rgba(v.$secondary-color, 0.4);
   }
 
   &:active {

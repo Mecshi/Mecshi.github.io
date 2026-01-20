@@ -2,6 +2,8 @@
 // RESET Y ESTILOS BASE
 // ============================================
 
+@use '../abstracts/variables' as v;
+
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +11,9 @@
 }
 
 body {
-  font-family: $font-family-base;
-  line-height: $line-height-base;
-  color: $text-dark;
+  font-family: v.$font-family-base;
+  line-height: v.$line-height-base;
+  color: v.$text-dark;
 }
 
 a {

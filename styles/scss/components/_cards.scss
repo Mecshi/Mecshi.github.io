@@ -1,45 +1,48 @@
 // ============================================
-// TARJETAS - Versión Simplificada
+// TARJETAS
 // ============================================
 
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
 .service-card {
-  @include card-base;
+  @include m.card-base;
   transition: all 0.3s ease;
 
   &:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba($primary-color, 0.3);
+    box-shadow: 0 15px 35px rgba(v.$primary-color, 0.3);
   }
 
   h3 {
-    color: $primary-color;
-    margin-bottom: $spacing-sm;
+    color: v.$primary-color;
+    margin-bottom: v.$spacing-sm;
     font-weight: bold;
     transition: color 0.3s ease;
   }
 
   &:hover h3 {
-    color: $secondary-color;
+    color: v.$secondary-color;
   }
 
   p {
-    color: $text-medium;
+    color: v.$text-medium;
     line-height: 1.8;
   }
 }
 
 .services-ul {
-  margin-top: $spacing-sm;
+  margin-top: v.$spacing-sm;
   padding-left: 1.5rem;
-  color: $text-medium;
+  color: v.$text-medium;
 
   li {
-    margin-bottom: $spacing-xs;
+    margin-bottom: v.$spacing-xs;
     transition: transform 0.3s ease;
 
     &:hover {
       transform: translateX(5px);
-      color: $primary-color;
+      color: v.$primary-color;
     }
   }
 }
@@ -50,7 +53,7 @@
 // ============================================
 
 .stat-item {
-  padding: $spacing-lg;
+  padding: v.$spacing-lg;
   text-align: center;
   transition: transform 0.3s ease;
 
@@ -60,11 +63,11 @@
 }
 
 .stat-number {
-  font-size: $font-size-xxl;
-  color: $primary-color;
+  font-size: v.$font-size-xxl;
+  color: v.$primary-color;
   font-weight: bold;
   display: block;
-  margin-bottom: $spacing-xs;
+  margin-bottom: v.$spacing-xs;
   transition: transform 0.3s ease;
 
   &:hover {
@@ -78,8 +81,8 @@
 // ============================================
 
 .clients-section {
-  background: $light-gray;
-  padding: $spacing-xxl 0;
+  background: v.$light-gray;
+  padding: v.$spacing-xxl 0;
   position: relative;
   overflow: hidden;
 
@@ -93,7 +96,7 @@
     height: 100%;
     background: linear-gradient(90deg,
         transparent,
-        rgba($primary-color, 0.05),
+        rgba(v.$primary-color, 0.05),
         transparent);
     animation: slideLight 4s infinite;
   }
@@ -101,11 +104,11 @@
 
 .client-logo {
   text-align: center;
-  @include flex-center;
+  @include m.flex-center;
   gap: 5rem;
-  margin-top: $spacing-xl;
+  margin-top: v.$spacing-xl;
   flex-wrap: wrap;
-  padding: $spacing-sm;
+  padding: v.$spacing-sm;
   position: relative;
   z-index: 1;
 

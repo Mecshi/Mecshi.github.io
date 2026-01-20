@@ -1,9 +1,12 @@
 // ============================================
-// HERO SECTION - Versión Simplificada
+// HERO SECTION
 // ============================================
 
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
 .hero {
-  @include gradient-primary;
+  @include m.gradient-primary;
   background-size: 200% 200%;
   animation: gradientShift 8s ease infinite;
   color: white;
@@ -13,31 +16,31 @@
   overflow: hidden;
 
   h1 {
-    font-size: $font-size-xxl;
-    margin-bottom: $spacing-sm;
+    font-size: v.$font-size-xxl;
+    margin-bottom: v.$spacing-sm;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 
-    @include respond-to(md) {
+    @include m.respond-to(md) {
       font-size: 2rem;
     }
 
-    @include respond-to(xs) {
+    @include m.respond-to(xs) {
       font-size: 1.75rem;
     }
   }
 
   p {
-    font-size: $font-size-lg;
-    margin-bottom: $spacing-lg;
+    font-size: v.$font-size-lg;
+    margin-bottom: v.$spacing-lg;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 
-    @include respond-to(md) {
+    @include m.respond-to(md) {
       font-size: 1.1rem;
     }
   }
 
-  @include respond-to(md) {
+  @include m.respond-to(md) {
     padding: 120px 0 80px;
   }
 }

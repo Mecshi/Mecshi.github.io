@@ -2,23 +2,26 @@
 // FOOTER
 // ============================================
 
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
 footer {
-  background: $dark-color;
+  background: v.$dark-color;
   color: white;
-  padding: $spacing-xl 0 0;
-  margin-top: $spacing-xxl;
+  padding: v.$spacing-xl 0 0;
+  margin-top: v.$spacing-xxl;
 }
 
 .footer-column {
   h3 {
-    color: $primary-color;
-    margin-bottom: $spacing-md;
+    color: v.$primary-color;
+    margin-bottom: v.$spacing-md;
     font-size: 1.2rem;
     font-weight: bold;
   }
 
   p {
-    color: $text-gray;
+    color: v.$text-gray;
     line-height: 1.8;
   }
 
@@ -30,12 +33,12 @@ footer {
       margin-bottom: 0.8rem;
 
       a {
-        color: $text-gray;
+        color: v.$text-gray;
         text-decoration: none;
-        @include transition(color);
+        @include m.transition(color);
 
         &:hover {
-          color: $primary-color;
+          color: v.$primary-color;
         }
       }
     }
@@ -44,49 +47,49 @@ footer {
 
 .contact-info {
   li {
-    color: $text-gray;
+    color: v.$text-gray;
     line-height: 2;
   }
 }
 
 .social-links {
   a {
-    color: $text-gray;
+    color: v.$text-gray;
     text-decoration: none;
-    margin-right: $spacing-sm;
-    @include transition(color);
+    margin-right: v.$spacing-sm;
+    @include m.transition(color);
 
     &:hover {
-      color: $primary-color;
+      color: v.$primary-color;
     }
   }
 }
 
 .footer-bottom {
-  background: $darker-color;
-  padding: $spacing-md 0;
-  margin-top: $spacing-xl;
+  background: v.$darker-color;
+  padding: v.$spacing-md 0;
+  margin-top: v.$spacing-xl;
   text-align: center;
 
   p {
     margin: 0;
-    color: $text-gray;
+    color: v.$text-gray;
   }
 }
 
 .footer-links {
   text-align: center;
-  margin-top: $spacing-sm;
+  margin-top: v.$spacing-sm;
 
   a {
-    color: $text-gray;
+    color: v.$text-gray;
     text-decoration: none;
     font-size: 0.9rem;
-    margin: 0 $spacing-sm;
-    @include transition(color);
+    margin: 0 v.$spacing-sm;
+    @include m.transition(color);
 
     &:hover {
-      color: $primary-color;
+      color: v.$primary-color;
     }
   }
 }

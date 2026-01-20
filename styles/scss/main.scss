@@ -1,27 +1,27 @@
 // ============================================
-// MAIN SASS FILE - TechSolutions (Versión Simple)
+// MAIN SASS FILE - TechSolutions
 // ============================================
 
-// 1. ABSTRACTS (Variables y Mixins)
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
+// Importar variables y mixins primero
+@use 'abstracts/variables' as v;
+@use 'abstracts/mixins' as m;
 
-// 2. ANIMATIONS (Solo CSS, sin JavaScript)
-@import 'animations/animations';
+// Importar animaciones
+@use 'animations/animations';
 
-// 3. BASE (Reset y estilos base)
-@import 'base/reset';
+// Importar base
+@use 'base/reset';
 
-// 4. LAYOUT (Header, Hero, Footer)
-@import 'layout/header';
-@import 'layout/hero';
-@import 'layout/footer';
+// Importar layout
+@use 'layout/header';
+@use 'layout/hero';
+@use 'layout/footer';
 
-// 5. COMPONENTS (Componentes reutilizables)
-@import 'components/navbar';
-@import 'components/buttons';
-@import 'components/cards';
-@import 'components/forms';
+// Importar componentes
+@use 'components/navbar';
+@use 'components/buttons';
+@use 'components/cards';
+@use 'components/forms';
 
 
 // ============================================
@@ -29,24 +29,24 @@
 // ============================================
 
 .section-title {
-  font-size: $font-size-xl;
-  margin-bottom: $spacing-sm;
-  margin-top: $spacing-sm;
-  color: $text-dark;
+  font-size: v.$font-size-xl;
+  margin-bottom: v.$spacing-sm;
+  margin-top: v.$spacing-sm;
+  color: v.$text-dark;
   font-weight: bold;
 
-  @include respond-to(md) {
+  @include m.respond-to(md) {
     font-size: 2rem;
   }
 
-  @include respond-to(xs) {
+  @include m.respond-to(xs) {
     font-size: 1.75rem;
   }
 }
 
 .section-subtitle {
-  color: $text-medium;
-  margin-bottom: $spacing-xl;
+  color: v.$text-medium;
+  margin-bottom: v.$spacing-xl;
   font-size: 1.1rem;
 }
 
@@ -108,7 +108,7 @@
 // RESPONSIVE
 // ============================================
 
-@include respond-to(md) {
+@include m.respond-to(md) {
   .stat-number {
     font-size: 2.5rem;
   }
