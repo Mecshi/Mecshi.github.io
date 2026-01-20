@@ -1,0 +1,84 @@
+// ============================================
+// MIXINS PARA MEDIA QUERIES
+// ============================================
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == xs {
+    @media (max-width: $breakpoint-xs) { @content; }
+  }
+  @else if $breakpoint == sm {
+    @media (max-width: $breakpoint-sm) { @content; }
+  }
+  @else if $breakpoint == md {
+    @media (max-width: $breakpoint-md) { @content; }
+  }
+  @else if $breakpoint == lg {
+    @media (max-width: $breakpoint-lg) { @content; }
+  }
+  @else if $breakpoint == xl {
+    @media (max-width: $breakpoint-xl) { @content; }
+  }
+}
+
+
+// ============================================
+// MIXIN PARA GRADIENTE
+// ============================================
+
+@mixin gradient-primary {
+  background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+}
+
+
+// ============================================
+// MIXIN PARA FLEXBOX CENTRADO
+// ============================================
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+// ============================================
+// MIXIN PARA TRANSICIONES
+// ============================================
+
+@mixin transition($properties...) {
+  transition: $properties $transition-base;
+}
+
+
+// ============================================
+// MIXIN PARA HOVER LIFT EFFECT
+// ============================================
+
+@mixin hover-lift($distance: -10px) {
+  transition: transform $transition-base, box-shadow $transition-base;
+  
+  &:hover {
+    transform: translateY($distance);
+    box-shadow: $shadow-lg;
+  }
+}
+
+
+// ============================================
+// MIXIN PARA CARDS
+// ============================================
+
+@mixin card-base {
+  background: white;
+  padding: $spacing-lg;
+  border-radius: $border-radius-md;
+  box-shadow: $shadow-md;
+  height: 100%;
+  border: none;
+}

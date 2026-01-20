@@ -1,0 +1,110 @@
+// ============================================
+// KEYFRAMES ANIMATIONS - SOLO CSS
+// ============================================
+
+// Fade In Up - Aparición desde abajo
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Fade In - Aparición suave
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+// Scale In - Escalado
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+// Float - Flotación suave
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+// Gradient Shift - Gradiente animado
+@keyframes gradientShift {
+
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+// Slide Light - Luz deslizante
+@keyframes slideLight {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+
+// ============================================
+// CLASES DE ANIMACIÓN SIMPLES
+// ============================================
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.6s ease-out;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+
+// ============================================
+// DELAYS PARA ANIMACIONES ESCALONADAS
+// ============================================
+
+@for $i from 1 through 6 {
+  .delay-#{$i} {
+    animation-delay: #{$i * 0.15}s;
+    animation-fill-mode: backwards;
+  }
+}

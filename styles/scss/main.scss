@@ -1,0 +1,120 @@
+// ============================================
+// MAIN SASS FILE - TechSolutions (Versión Simple)
+// ============================================
+
+// 1. ABSTRACTS (Variables y Mixins)
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// 2. ANIMATIONS (Solo CSS, sin JavaScript)
+@import 'animations/animations';
+
+// 3. BASE (Reset y estilos base)
+@import 'base/reset';
+
+// 4. LAYOUT (Header, Hero, Footer)
+@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/footer';
+
+// 5. COMPONENTS (Componentes reutilizables)
+@import 'components/navbar';
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/forms';
+
+
+// ============================================
+// SECCIONES Y TÍTULOS
+// ============================================
+
+.section-title {
+  font-size: $font-size-xl;
+  margin-bottom: $spacing-sm;
+  margin-top: $spacing-sm;
+  color: $text-dark;
+  font-weight: bold;
+
+  @include respond-to(md) {
+    font-size: 2rem;
+  }
+
+  @include respond-to(xs) {
+    font-size: 1.75rem;
+  }
+}
+
+.section-subtitle {
+  color: $text-medium;
+  margin-bottom: $spacing-xl;
+  font-size: 1.1rem;
+}
+
+
+// ============================================
+// ANIMACIONES AUTOMÁTICAS AL CARGAR
+// ============================================
+
+// Hero con animación
+.hero {
+  h1 {
+    animation: fadeInUp 1s ease-out;
+  }
+
+  p {
+    animation: fadeInUp 1s ease-out 0.3s backwards;
+  }
+
+  .btn-custom {
+    animation: fadeInUp 1s ease-out 0.6s backwards;
+  }
+}
+
+// Cards con animación escalonada
+.service-card {
+  animation: fadeInUp 0.8s ease-out backwards;
+
+  @for $i from 1 through 12 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.15}s;
+    }
+  }
+}
+
+// Estadísticas
+.stat-item {
+  animation: scaleIn 0.8s ease-out backwards;
+
+  @for $i from 1 through 6 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.2}s;
+    }
+  }
+}
+
+// Logos de clientes
+.client-logo {
+  animation: scaleIn 0.8s ease-out backwards;
+
+  @for $i from 1 through 8 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.1}s;
+    }
+  }
+}
+
+
+// ============================================
+// RESPONSIVE
+// ============================================
+
+@include respond-to(md) {
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  .client-logo img {
+    max-width: 150px;
+    max-height: 90px;
+  }
+}

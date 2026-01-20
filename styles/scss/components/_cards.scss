@@ -1,0 +1,126 @@
+// ============================================
+// TARJETAS - Versión Simplificada
+// ============================================
+
+.service-card {
+  @include card-base;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba($primary-color, 0.3);
+  }
+
+  h3 {
+    color: $primary-color;
+    margin-bottom: $spacing-sm;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  &:hover h3 {
+    color: $secondary-color;
+  }
+
+  p {
+    color: $text-medium;
+    line-height: 1.8;
+  }
+}
+
+.services-ul {
+  margin-top: $spacing-sm;
+  padding-left: 1.5rem;
+  color: $text-medium;
+
+  li {
+    margin-bottom: $spacing-xs;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateX(5px);
+      color: $primary-color;
+    }
+  }
+}
+
+
+// ============================================
+// ESTADÍSTICAS
+// ============================================
+
+.stat-item {
+  padding: $spacing-lg;
+  text-align: center;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.stat-number {
+  font-size: $font-size-xxl;
+  color: $primary-color;
+  font-weight: bold;
+  display: block;
+  margin-bottom: $spacing-xs;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+
+// ============================================
+// CLIENTES
+// ============================================
+
+.clients-section {
+  background: $light-gray;
+  padding: $spacing-xxl 0;
+  position: relative;
+  overflow: hidden;
+
+  // Luz deslizante de fondo
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+        transparent,
+        rgba($primary-color, 0.05),
+        transparent);
+    animation: slideLight 4s infinite;
+  }
+}
+
+.client-logo {
+  text-align: center;
+  @include flex-center;
+  gap: 5rem;
+  margin-top: $spacing-xl;
+  flex-wrap: wrap;
+  padding: $spacing-sm;
+  position: relative;
+  z-index: 1;
+
+  img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    max-height: 120px;
+    object-fit: contain;
+    filter: grayscale(100%) opacity(0.6);
+    transition: all 0.4s ease;
+
+    &:hover {
+      filter: grayscale(0%) opacity(1);
+      transform: scale(1.15);
+    }
+  }
+}

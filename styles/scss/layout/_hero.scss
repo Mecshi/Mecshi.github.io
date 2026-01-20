@@ -1,0 +1,43 @@
+// ============================================
+// HERO SECTION - Versión Simplificada
+// ============================================
+
+.hero {
+  @include gradient-primary;
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+  color: white;
+  padding: 150px 0 100px;
+  margin-top: 56px;
+  position: relative;
+  overflow: hidden;
+
+  h1 {
+    font-size: $font-size-xxl;
+    margin-bottom: $spacing-sm;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+    @include respond-to(md) {
+      font-size: 2rem;
+    }
+
+    @include respond-to(xs) {
+      font-size: 1.75rem;
+    }
+  }
+
+  p {
+    font-size: $font-size-lg;
+    margin-bottom: $spacing-lg;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+
+    @include respond-to(md) {
+      font-size: 1.1rem;
+    }
+  }
+
+  @include respond-to(md) {
+    padding: 120px 0 80px;
+  }
+}
