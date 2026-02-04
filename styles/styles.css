@@ -3,69 +3,53 @@
     opacity: 0;
     transform: translateY(30px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
 }
-
 @keyframes scaleIn {
   from {
     opacity: 0;
     transform: scale(0.9);
   }
-
   to {
     opacity: 1;
     transform: scale(1);
   }
 }
-
 @keyframes float {
-
-  0%,
-  100% {
+  0%, 100% {
     transform: translateY(0);
   }
-
   50% {
     transform: translateY(-10px);
   }
 }
-
 @keyframes gradientShift {
-
-  0%,
-  100% {
+  0%, 100% {
     background-position: 0% 50%;
   }
-
   50% {
     background-position: 100% 50%;
   }
 }
-
 @keyframes slideLight {
   from {
     transform: translateX(-100%);
   }
-
   to {
     transform: translateX(100%);
   }
 }
-
 .animate-fadeInUp {
   animation: fadeInUp 0.8s ease-out;
 }
@@ -153,38 +137,32 @@ header {
   position: relative;
   overflow: hidden;
 }
-
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
-
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2rem;
   }
 }
-
 @media (max-width: 480px) {
   .hero h1 {
     font-size: 1.75rem;
   }
 }
-
 .hero p {
   font-size: 1.3rem;
   margin-bottom: 2rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
-
 @media (max-width: 768px) {
   .hero p {
     font-size: 1.1rem;
   }
 }
-
 @media (max-width: 768px) {
   .hero {
     padding: 120px 0 80px;
@@ -204,27 +182,22 @@ footer {
   font-size: 1.2rem;
   font-weight: bold;
 }
-
 .footer-column p {
   color: #bdc3c7;
   line-height: 1.8;
 }
-
 .footer-column ul {
   list-style: none;
   padding: 0;
 }
-
 .footer-column ul li {
   margin-bottom: 0.8rem;
 }
-
 .footer-column ul li a {
   color: #bdc3c7;
   text-decoration: none;
   transition: color 0.3s ease;
 }
-
 .footer-column ul li a:hover {
   color: #667eea;
 }
@@ -240,7 +213,6 @@ footer {
   margin-right: 1rem;
   transition: color 0.3s ease;
 }
-
 .social-links a:hover {
   color: #667eea;
 }
@@ -251,7 +223,6 @@ footer {
   margin-top: 3rem;
   text-align: center;
 }
-
 .footer-bottom p {
   margin: 0;
   color: #bdc3c7;
@@ -261,7 +232,6 @@ footer {
   text-align: center;
   margin-top: 1rem;
 }
-
 .footer-links a {
   color: #bdc3c7;
   text-decoration: none;
@@ -269,7 +239,6 @@ footer {
   margin: 0 1rem;
   transition: color 0.3s ease;
 }
-
 .footer-links a:hover {
   color: #667eea;
 }
@@ -277,25 +246,21 @@ footer {
 .navbar {
   padding: 1rem 0;
 }
-
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
   color: white !important;
   transition: transform 0.3s ease;
 }
-
 .navbar-brand:hover {
   transform: scale(1.05);
 }
-
 .navbar-nav .nav-link {
   color: white !important;
   transition: opacity 0.3s ease;
   padding: 0.5rem 1rem;
   position: relative;
 }
-
 .navbar-nav .nav-link::after {
   content: "";
   position: absolute;
@@ -307,27 +272,21 @@ footer {
   transform: translateX(-50%);
   transition: width 0.3s ease;
 }
-
 .navbar-nav .nav-link:hover {
   opacity: 1;
 }
-
 .navbar-nav .nav-link:hover::after {
   width: 80%;
 }
-
 .navbar-nav .nav-link.active {
   font-weight: 600;
 }
-
 .navbar-nav .nav-link.active::after {
   width: 80%;
 }
-
 .navbar-toggler {
   border-color: rgba(255, 255, 255, 0.5);
 }
-
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
@@ -343,18 +302,15 @@ footer {
   display: inline-block;
   transition: all 0.3s ease;
 }
-
 .btn-custom:hover {
   transform: translateY(-3px);
   background: white;
   color: #667eea;
   box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
 }
-
 .btn-custom:active {
   transform: translateY(-1px);
 }
-
 .btn-custom.btn-lg {
   font-size: 1.3rem;
   padding: 1.2rem 2.5rem;
@@ -371,13 +327,11 @@ footer {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 .btn-submit:hover {
   background: #764ba2;
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(118, 75, 162, 0.4);
 }
-
 .btn-submit:active {
   transform: translateY(0);
 }
@@ -391,23 +345,19 @@ footer {
   border: none;
   transition: all 0.3s ease;
 }
-
 .service-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 35px rgba(102, 126, 234, 0.3);
 }
-
 .service-card h3 {
   color: #667eea;
   margin-bottom: 1rem;
   font-weight: bold;
   transition: color 0.3s ease;
 }
-
 .service-card:hover h3 {
   color: #764ba2;
 }
-
 .service-card p {
   color: #666;
   line-height: 1.8;
@@ -418,12 +368,10 @@ footer {
   padding-left: 1.5rem;
   color: #666;
 }
-
 .services-ul li {
   margin-bottom: 0.5rem;
   transition: transform 0.3s ease;
 }
-
 .services-ul li:hover {
   transform: translateX(5px);
   color: #667eea;
@@ -434,7 +382,6 @@ footer {
   text-align: center;
   transition: transform 0.3s ease;
 }
-
 .stat-item:hover {
   transform: scale(1.05);
 }
@@ -447,7 +394,6 @@ footer {
   margin-bottom: 0.5rem;
   transition: transform 0.3s ease;
 }
-
 .stat-number:hover {
   transform: scale(1.1);
 }
@@ -458,7 +404,6 @@ footer {
   position: relative;
   overflow: hidden;
 }
-
 .clients-section::before {
   content: "";
   position: absolute;
@@ -482,7 +427,6 @@ footer {
   position: relative;
   z-index: 1;
 }
-
 .client-logo img {
   width: 100%;
   max-width: 200px;
@@ -492,7 +436,6 @@ footer {
   filter: grayscale(100%) opacity(0.6);
   transition: all 0.4s ease;
 }
-
 .client-logo img:hover {
   filter: grayscale(0%) opacity(1);
   transform: scale(1.15);
@@ -506,7 +449,6 @@ footer {
   max-width: 600px;
   margin: 0 auto;
 }
-
 .contact-form h2 {
   text-align: center;
   color: #667eea;
@@ -528,7 +470,6 @@ footer {
   font-size: 1rem;
   transition: all 0.3s ease;
 }
-
 .form-control:focus,
 .form-select:focus {
   border-color: #667eea;
@@ -548,13 +489,11 @@ textarea.form-control {
   color: #333;
   font-weight: bold;
 }
-
 @media (max-width: 768px) {
   .section-title {
     font-size: 2rem;
   }
 }
-
 @media (max-width: 480px) {
   .section-title {
     font-size: 1.75rem;
@@ -570,11 +509,9 @@ textarea.form-control {
 .hero h1 {
   animation: fadeInUp 1s ease-out;
 }
-
 .hero p {
   animation: fadeInUp 1s ease-out 0.3s backwards;
 }
-
 .hero .btn-custom {
   animation: fadeInUp 1s ease-out 0.6s backwards;
 }
@@ -582,51 +519,39 @@ textarea.form-control {
 .service-card {
   animation: fadeInUp 0.8s ease-out backwards;
 }
-
 .service-card:nth-child(1) {
   animation-delay: 0.15s;
 }
-
 .service-card:nth-child(2) {
   animation-delay: 0.3s;
 }
-
 .service-card:nth-child(3) {
   animation-delay: 0.45s;
 }
-
 .service-card:nth-child(4) {
   animation-delay: 0.6s;
 }
-
 .service-card:nth-child(5) {
   animation-delay: 0.75s;
 }
-
 .service-card:nth-child(6) {
   animation-delay: 0.9s;
 }
-
 .service-card:nth-child(7) {
   animation-delay: 1.05s;
 }
-
 .service-card:nth-child(8) {
   animation-delay: 1.2s;
 }
-
 .service-card:nth-child(9) {
   animation-delay: 1.35s;
 }
-
 .service-card:nth-child(10) {
   animation-delay: 1.5s;
 }
-
 .service-card:nth-child(11) {
   animation-delay: 1.65s;
 }
-
 .service-card:nth-child(12) {
   animation-delay: 1.8s;
 }
@@ -634,27 +559,21 @@ textarea.form-control {
 .stat-item {
   animation: scaleIn 0.8s ease-out backwards;
 }
-
 .stat-item:nth-child(1) {
   animation-delay: 0.2s;
 }
-
 .stat-item:nth-child(2) {
   animation-delay: 0.4s;
 }
-
 .stat-item:nth-child(3) {
   animation-delay: 0.6s;
 }
-
 .stat-item:nth-child(4) {
   animation-delay: 0.8s;
 }
-
 .stat-item:nth-child(5) {
   animation-delay: 1s;
 }
-
 .stat-item:nth-child(6) {
   animation-delay: 1.2s;
 }
@@ -662,35 +581,27 @@ textarea.form-control {
 .client-logo {
   animation: scaleIn 0.8s ease-out backwards;
 }
-
 .client-logo:nth-child(1) {
   animation-delay: 0.1s;
 }
-
 .client-logo:nth-child(2) {
   animation-delay: 0.2s;
 }
-
 .client-logo:nth-child(3) {
   animation-delay: 0.3s;
 }
-
 .client-logo:nth-child(4) {
   animation-delay: 0.4s;
 }
-
 .client-logo:nth-child(5) {
   animation-delay: 0.5s;
 }
-
 .client-logo:nth-child(6) {
   animation-delay: 0.6s;
 }
-
 .client-logo:nth-child(7) {
   animation-delay: 0.7s;
 }
-
 .client-logo:nth-child(8) {
   animation-delay: 0.8s;
 }
@@ -699,7 +610,6 @@ textarea.form-control {
   .stat-number {
     font-size: 2.5rem;
   }
-
   .client-logo img {
     max-width: 150px;
     max-height: 90px;
