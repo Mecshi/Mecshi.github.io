@@ -1,0 +1,24 @@
+# robots.txt para TechSolutions
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /*.scss$
+Disallow: /styles/scss/
+
+# Sitemap
+Sitemap: https://mecshi.github.io/sitemap.xml
+
+# Rastreadores específicos
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Bloquear bots malos
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
