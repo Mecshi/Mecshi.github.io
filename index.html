@@ -2,8 +2,48 @@
 <html lang="es">
 
 <head>
+  <!-- Meta Tags Básicos -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO Meta Tags -->
+  <title>TechSolutions - Desarrollo de Software a Medida en Argentina | Soluciones Tecnológicas</title>
+  <meta name="description"
+    content="Empresa líder en desarrollo de software a medida, aplicaciones móviles y web en Argentina. Más de 10 años transformando ideas en soluciones tecnológicas innovadoras.">
+  <meta name="keywords"
+    content="desarrollo software, aplicaciones móviles, desarrollo web, software a medida, consultoría IT, Argentina, Villa María, Córdoba">
+  <meta name="author" content="TechSolutions">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mecshi.github.io/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mecshi.github.io/">
+  <meta property="og:title" content="TechSolutions - Desarrollo de Software a Medida">
+  <meta property="og:description"
+    content="Transformamos ideas en soluciones tecnológicas innovadoras. Desarrollo web, apps móviles y software personalizado.">
+  <meta property="og:image" content="https://mecshi.github.io/images/og-image.jpg">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="TechSolutions">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://mecshi.github.io/">
+  <meta name="twitter:title" content="TechSolutions - Desarrollo de Software a Medida">
+  <meta name="twitter:description" content="Transformamos ideas en soluciones tecnológicas innovadoras.">
+  <meta name="twitter:image" content="https://mecshi.github.io/images/twitter-card.jpg">
+
+  <!-- Geo Tags -->
+  <meta name="geo.region" content="AR-X">
+  <meta name="geo.placename" content="Villa María, Córdoba">
+  <meta name="geo.position" content="-32.4117;-63.2400">
+  <meta name="ICBM" content="-32.4117, -63.2400">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -11,30 +51,70 @@
   <!-- Estilos personalizados -->
   <link rel="stylesheet" href="styles/styles.css">
 
-  <title>TechSolutions - Soluciones de Software</title>
+  <!-- Preconnect para performance -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TechSolutions",
+    "url": "https://mecshi.github.io",
+    "logo": "https://mecshi.github.io/images/logo.png",
+    "description": "Empresa de desarrollo de software a medida, aplicaciones móviles y consultoría IT",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Principal 123",
+      "addressLocality": "Villa María",
+      "addressRegion": "Córdoba",
+      "postalCode": "5900",
+      "addressCountry": "AR"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+54-353-123-4567",
+      "contactType": "customer service",
+      "areaServed": "AR",
+      "availableLanguage": "Spanish"
+    },
+    "sameAs": [
+      "https://www.facebook.com/techsolutions",
+      "https://www.linkedin.com/company/techsolutions",
+      "https://twitter.com/techsolutions"
+    ]
+  }
+  </script>
 </head>
 
 <body>
 
-  <!-- HEADER CON NAVBAR DE BOOTSTRAP -->
+  <!-- HEADER CON NAVBAR -->
   <header class="fixed-top">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg" aria-label="Navegación principal">
       <div class="container-fluid px-lg-5">
-        <a class="navbar-brand" href="index.html">TechSolutions</a>
+        <a class="navbar-brand" href="index.html" aria-label="TechSolutions - Inicio">TechSolutions</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav gap-3">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="pages/services.html">Servicios</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="pages/about.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="pages/contact.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/jobs.html">Empleo</a>
             </li>
           </ul>
         </div>
@@ -46,113 +126,122 @@
     <!-- HERO SECTION -->
     <section class="hero">
       <div class="container text-center">
-        <h1>Transformamos Ideas en Software</h1>
-        <p>Soluciones tecnológicas innovadoras para tu negocio</p>
-        <a href="pages/contact.html" class="btn btn-custom btn-lg">Contáctanos</a>
+        <h1>Transformamos Ideas en Software de Calidad</h1>
+        <p>Soluciones tecnológicas innovadoras para impulsar tu negocio en Argentina y Latinoamérica</p>
+        <a href="pages/contact.html" class="btn btn-custom btn-lg"
+          aria-label="Contactar con TechSolutions">Contáctanos</a>
       </div>
     </section>
 
     <!-- SERVICIOS -->
-    <div class="container py-5">
+    <section class="container py-5" aria-labelledby="servicios-heading">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="section-title">Nuestros Servicios</h2>
-          <p class="section-subtitle">Ofrecemos soluciones integrales para impulsar tu empresa</p>
+          <h2 id="servicios-heading" class="section-title">Nuestros Servicios de Desarrollo</h2>
+          <p class="section-subtitle">Soluciones integrales de software para empresas de todos los tamaños</p>
         </div>
       </div>
 
       <div class="row g-4">
-        <div class="col-12 col-md-6 col-lg-4">
+        <article class="col-12 col-md-6 col-lg-4">
           <div class="service-card">
-            <h3>Desarrollo Web</h3>
-            <p>Creamos sitios web modernos, responsivos y optimizados para tu negocio. Utilizamos las últimas
-              tecnologías
-              para garantizar rendimiento y escalabilidad.</p>
+            <h3>Desarrollo Web Profesional</h3>
+            <p>Creamos sitios web modernos, responsivos y optimizados para SEO. Utilizamos las últimas tecnologías
+              como React, Vue.js y Node.js para garantizar rendimiento y escalabilidad.</p>
           </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
+        </article>
+        <article class="col-12 col-md-6 col-lg-4">
           <div class="service-card">
-            <h3>Aplicaciones Móviles</h3>
-            <p>Desarrollamos apps nativas e híbridas para iOS y Android. Experiencias de usuario excepcionales que
+            <h3>Aplicaciones Móviles iOS y Android</h3>
+            <p>Desarrollamos apps nativas e híbridas para iOS y Android con React Native y Flutter. Experiencias de
+              usuario excepcionales que
               conectan con tus clientes.</p>
           </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
+        </article>
+        <article class="col-12 col-md-6 col-lg-4">
           <div class="service-card">
-            <h3>Software a Medida</h3>
-            <p>Soluciones personalizadas diseñadas específicamente para las necesidades únicas de tu empresa y optimizar
-              tus procesos.</p>
+            <h3>Software a Medida Empresarial</h3>
+            <p>Soluciones personalizadas diseñadas específicamente para las necesidades únicas de tu empresa. ERP, CRM y
+              sistemas de gestión optimizados.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ESTADÍSTICAS -->
+    <section class="container py-5" aria-labelledby="stats-heading">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 id="stats-heading" class="section-title">¿Por qué elegir TechSolutions?</h2>
+          <p class="section-subtitle">Comprometidos con la excelencia y la innovación tecnológica</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="stat-item">
+            <span class="stat-number">150+</span>
+            <p>Proyectos Completados</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="stat-item">
+            <span class="stat-number">95%</span>
+            <p>Clientes Satisfechos</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="stat-item">
+            <span class="stat-number">10+</span>
+            <p>Años de Experiencia</p>
           </div>
         </div>
       </div>
-
-      <!-- ESTADÍSTICAS -->
-      <section class="mt-5">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h2 class="section-title">¿Por qué elegirnos?</h2>
-            <p class="section-subtitle">Comprometidos con la excelencia y la innovación</p>
-          </div>
-        </div>
-        <div class="row g-4">
-          <div class="col-12 col-md-4">
-            <div class="stat-item">
-              <span class="stat-number">150+</span>
-              <p>Proyectos Completados</p>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="stat-item">
-              <span class="stat-number">95%</span>
-              <p>Clientes Satisfechos</p>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="stat-item">
-              <span class="stat-number">10+</span>
-              <p>Años de Experiencia</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+    </section>
 
     <!-- CLIENTES -->
-    <section class="clients-section">
+    <section class="clients-section" aria-labelledby="clients-heading">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h2 class="section-title">Clientes que Confían en Nosotros</h2>
-            <p class="section-subtitle">Empresas líderes que han confiado en nuestras soluciones</p>
+            <h2 id="clients-heading" class="section-title">Empresas que Confían en Nosotros</h2>
+            <p class="section-subtitle">Clientes satisfechos en toda Argentina</p>
           </div>
         </div>
 
         <div class="row justify-content-center g-4">
           <div class="col-6 col-md-3">
             <div class="client-logo">
-              <a href="https://www.linkedin.com/company/cordobamotossrl" target="_blank">
-                <img src="images/cordobamotos.svg" alt="Córdoba Motos SRL" class="img-fluid">
+              <a href="https://www.linkedin.com/company/cordobamotossrl" target="_blank" rel="noopener noreferrer"
+                aria-label="Visitar perfil de Córdoba Motos SRL">
+                <img src="images/cordobamotos.svg" alt="Logo de Córdoba Motos SRL - Cliente de TechSolutions"
+                  class="img-fluid" width="200" height="120">
               </a>
             </div>
           </div>
           <div class="col-6 col-md-3">
             <div class="client-logo">
-              <a href="https://www.linkedin.com/company/ferreterageneralpaz" target="_blank">
-                <img src="images/fgp.svg" alt="Ferretera General Paz" class="img-fluid">
+              <a href="https://www.linkedin.com/company/ferreterageneralpaz" target="_blank" rel="noopener noreferrer"
+                aria-label="Visitar perfil de Ferretera General Paz">
+                <img src="images/fgp.svg" alt="Logo de Ferretera General Paz - Cliente de TechSolutions"
+                  class="img-fluid" width="200" height="120">
               </a>
             </div>
           </div>
           <div class="col-6 col-md-3">
             <div class="client-logo">
-              <a href="https://www.linkedin.com/company/ever-wear" target="_blank">
-                <img src="images/everwear.svg" alt="Ever Wear" class="img-fluid">
+              <a href="https://www.linkedin.com/company/ever-wear" target="_blank" rel="noopener noreferrer"
+                aria-label="Visitar perfil de Ever Wear">
+                <img src="images/everwear.svg" alt="Logo de Ever Wear - Cliente de TechSolutions" class="img-fluid"
+                  width="200" height="120">
               </a>
             </div>
           </div>
           <div class="col-6 col-md-3">
             <div class="client-logo">
-              <a href="https://www.linkedin.com/company/boiero/" target="_blank">
-                <img src="images/boiero.svg" alt="Boiero S.A." class="img-fluid">
+              <a href="https://www.linkedin.com/company/boiero/" target="_blank" rel="noopener noreferrer"
+                aria-label="Visitar perfil de Boiero S.A.">
+                <img src="images/boiero.svg" alt="Logo de Boiero S.A. - Cliente de TechSolutions" class="img-fluid"
+                  width="200" height="120">
               </a>
             </div>
           </div>
@@ -168,34 +257,42 @@
         <div class="col-12 col-md-4">
           <div class="footer-column">
             <h3>TechSolutions</h3>
-            <p>Transformamos ideas en soluciones tecnológicas innovadoras para impulsar tu negocio hacia el futuro.</p>
-            <div class="social-links">
-              <a href="#" aria-label="Facebook">Facebook</a>
-              <a href="#" aria-label="Twitter">Twitter</a>
-              <a href="#" aria-label="LinkedIn">LinkedIn</a>
-              <a href="#" aria-label="Instagram">Instagram</a>
-            </div>
+            <p>Empresa argentina líder en desarrollo de software a medida, aplicaciones móviles y consultoría IT.</p>
+            <nav class="social-links" aria-label="Redes sociales">
+              <a href="https://facebook.com/techsolutions" target="_blank" rel="noopener noreferrer"
+                aria-label="Facebook de TechSolutions">Facebook</a>
+              <a href="https://twitter.com/techsolutions" target="_blank" rel="noopener noreferrer"
+                aria-label="Twitter de TechSolutions">Twitter</a>
+              <a href="https://linkedin.com/company/techsolutions" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn de TechSolutions">LinkedIn</a>
+              <a href="https://instagram.com/techsolutions" target="_blank" rel="noopener noreferrer"
+                aria-label="Instagram de TechSolutions">Instagram</a>
+            </nav>
           </div>
         </div>
         <div class="col-12 col-md-4">
           <div class="footer-column">
             <h3>Empresa</h3>
-            <ul>
-              <li><a href="index.html">Sobre Nosotros</a></li>
-              <li><a href="pages/services.html">Nuestro Equipo</a></li>
-              <li><a href="pages/jobs.html">Trabaja con Nosotros</a></li>
-            </ul>
+            <nav aria-label="Enlaces de empresa">
+              <ul>
+                <li><a href="pages/about.html">Sobre Nosotros</a></li>
+                <li><a href="pages/services.html">Servicios</a></li>
+                <li><a href="pages/jobs.html">Trabaja con Nosotros</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
         <div class="col-12 col-md-4">
           <div class="footer-column">
             <h3>Contacto</h3>
-            <ul class="contact-info">
-              <li>📍 Av. Principal 123, Villa María, Córdoba</li>
-              <li>📞 +54 353 123-4567</li>
-              <li>✉️ info@techsolutions.com</li>
-              <li>🕐 Lun - Vie: 9:00 - 18:00</li>
-            </ul>
+            <address class="contact-info">
+              <ul>
+                <li>📍 Av. Principal 123, Villa María, Córdoba, Argentina</li>
+                <li>📞 <a href="tel:+543531234567">+54 353 123-4567</a></li>
+                <li>✉️ <a href="mailto:info@techsolutions.com">info@techsolutions.com</a></li>
+                <li>🕐 Lun - Vie: 9:00 - 18:00</li>
+              </ul>
+            </address>
           </div>
         </div>
       </div>
@@ -203,7 +300,8 @@
 
     <div class="footer-bottom">
       <div class="container">
-        <p>&copy; 2024 TechSolutions. Todos los derechos reservados.</p>
+        <p>&copy; 2024 TechSolutions. Todos los derechos reservados. | <a href="pages/privacy.html">Política de
+            Privacidad</a> | <a href="pages/terms.html">Términos y Condiciones</a></p>
       </div>
     </div>
   </footer>
